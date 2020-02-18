@@ -146,12 +146,18 @@ overflow-y: hidden;
 }
 
 
-/*CARTES*/
+/*SHOP*/
 
-.cartes{
-  display: flex;
-  justify-content: space-around;
-  
+#shop{
+  height: 100vh;
+
+}
+
+
+
+.card{
+  box-shadow: 0 0 10px rgba(0,0,0,0.3) ;
+  border-radius: 20px;
 }
 
 
