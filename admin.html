@@ -36,9 +36,9 @@
             <li class="nav-item px-2">
               <a href="publication.html" class="nav-link">Publications</a>
             </li>
-            <li class="nav-item px-2">
+            <!--<li class="nav-item px-2">
               <a href="categorie.html" class="nav-link">Catégories</a>
-            </li>
+            </li>-->
             <li class="nav-item px-2">
               <a href="utilisateur.html" class="nav-link">Utilisateurs</a>
             </li>
@@ -84,19 +84,20 @@
     <section id="actions" class="py-4 mb-4 bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-6">
+
             <a href="#" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#addPostModal">
               <i class="fas fa-plus"></i> Ajouter une publication
             </a>
           </div>
-          <div class="col-md-3">
+         <!-- <div class="col-md-3">
             <a href="#" class="btn btn-warning btn-block" data-toggle="modal" data-target="#addCategoryModal">
               <i class="fas fa-plus"></i> Ajouter une catégorie
             </a>
-          </div>
-          <div class="col-md-3">
+          </div>-->
+          <div class="col-md-6">
             <a href="#" class="btn btn-danger btn-block" data-toggle="modal" data-target="#addUserModal">
-              <i class="fas fa-plus"></i> Ajouter un client
+              <i class="fas fa-plus"></i> Ajouter un utlisateur
             </a>
           </div>
         </div>
@@ -107,14 +108,14 @@
     <!--MODELS-->
 
 
-    <!--  ajouter une publication-->
+    <!--ajouter une publication-->
 
     <div class="modal fade" id="addPostModal">
       <div class="modal-dialog modal-dg">
         <div class="modal-content">
           <div class="modal-header bg-secondary txt-white">
             <h5 class="mmodal-title">Ajouter une publication</h5>
-            <button class="close data-dismiss=" modal>
+            <button class="close" data-dismiss="modal">
               <span>&times;</span>
             </button>
           </div>
@@ -125,12 +126,20 @@
                 <input type="text" class="form-control">
               </div>
               <div class="form-group">
-                <label for="categorie">Catégorie </label>
+                <label for="categorie">Publications</label>
                 <select name="form-control">
-                  <option value="">Développeur</option>
-                  <option value="">Cadre</option>
-                  <option value="">Technicien</option>
-                  <option value="">Commercial</option>
+                  <option value="">Baskets</option>
+                  <option value="">Vêtements</option>
+                  <option value="">Matériel</option>
+                  <option value="">Article</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="categorie">Catégorie</label>
+                <select name="form-control">
+                  <option value="">Vente</option>
+                  <option value="">Cours</option>
+                  <option value="">Info</option>
                 </select>
               </div>
               <div class="form-group">
@@ -147,66 +156,74 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="Savegarder"></button>
+            <button type="button" class="btn btn-secondary" data-dismiss="Sauvegarder">Sauvegarder</button>
           </div>
         </div>
       </div>
     </div>
 
-<!--ajoute une catégorie-->
+    <!--ajoute une catégorie
 
 
-<div class="modal fade" id="addCategoryModal">
-  <div class="modal-dialog modal-dg">
-    <div class="modal-content">
-      <div class="modal-header bg-warning txt-white">
-        <h5 class="mmodal-title">Ajouter une catégorie</h5>
-        <button class="close data-dismiss=" modal>
-          <span>&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="titre"> Titre</label>
-            <input type="text" class="form-control">
-          </div>  
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-warning" data-dismiss="Savegarder"></button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!--ajoute un utilisateur-->
-
-
-<div class="modal fade" id="addUserModal">
-  <div class="modal-dialog modal-dg">
-    <div class="modal-content">
-      <div class="modal-header bg-danger txt-white">
-        <h5 class="mmodal-title">Ajouter un utlisateur</h5>
-        <button class="close data-dismiss=" modal>
-          <span>&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="titre"> Titre</label>
-            <input type="text" class="form-control">
-          </div>  
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-danger" data-dismiss="Sauvegarder"></button>
+    <div class="modal fade" id="addCategoryModal">
+      <div class="modal-dialog modal-dg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning txt-white">
+            <h5 class="modal-title">Ajouter une catégorie</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="titre"> Nom</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="categorie">Catégorie</label>
+                <select name="form-control">
+                  <option value="">Vente</option>
+                  <option value="">Cours</option>
+                  <option value="">Info</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button tupe="button class=" btn btn-warning" data-dismiss="Sauvegarder"> Sauvegarder</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+
+-->
+    <!--ajoute un utilisateur-->
+
+
+    <div class="modal fade" id="addUserModal">
+      <div class="modal-dialog modal-dg">
+        <div class="modal-content">
+          <div class="modal-header bg-danger txt-white">
+            <h5 class="modal-title">Ajouter un utlisateur</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="titre"> Titre</label>
+                <input type="text" class="form-control">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-dismiss="Sauvegarder"></button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -223,62 +240,129 @@
                 <thead class="thead-dark">
                   <tr>
                     <th>#</th>
-                    <th>Publication</th>
+                    <th>Publications</th>
+                    <th>Utilisateurs</th>
                     <th>Catégorie</th>
                     <th>Date</th>
-                    <th></th>
+                    <th>Détails</th>
+                    <th>Choix</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>Article</td>
-                    <td>Commercial</td>
+                    <td>Baskets</td>
+                    <td>Quentin.a</td>
+                    <td>Vente</td>
                     <td>10/02/2020</td>
                     <td>
-                      <a href="details.html" class="btn-btn-secondary"><i class="fas fa-angle-double-right"></i></a>
+                      <a href="details.html" class="btn-btn-secondary"><i
+                          class="fas fa-angle-double-right"></i>Détails</a>
+                    </td>
+                    <td>
+                      <a href="#" class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Valider"><i
+                          id="choix1" class="fas fa-check-square text-success"></i></a>
+
+                      <a href="#" class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Supprimer"><i
+                          id="choix2" class="fas fa-times text-danger"></i> </a>
+
+                    </td>
                   </tr>
                   <tr>
                     <td>2</td>
-                    <td>Article</td>
-                    <td>Technicien</td>
+                    <td>Vêtements</td>
+                    <td>Julien.r</td>
+                    <td>Vente</td>
                     <td>11/02/2020</td>
                     <td>
-                      <a href="details.html" class="btn-btn-secondary"><i class="fas fa-angle-double-right"></i></a>
+                      <a href="details.html" class="btn-btn-secondary"><i
+                          class="fas fa-angle-double-right"></i>Détails</a>
+                    </td>
+                    <td>
+                      <a href="#" class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Valider"><i
+                          id="choix1" class="fas fa-check-square text-success"></i></a>
+
+                      <a href="#" class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Supprimer"><i
+                          id="choix2" class="fas fa-times text-danger"></i> </a>
+
+                    </td>
                   </tr>
                   <tr>
                     <td>3</td>
-                    <td>Pub</td>
-                    <td>Développeur</td>
+                    <td>Article</td>
+                    <td>Henri.i</td>
+                    <td>Info</td>
                     <td>15/02/2020</td>
                     <td>
-                      <a href="details.html" class="btn-btn-secondary"><i class="fas fa-angle-double-right"></i></a>
+                      <a href="details.html" class="btn-btn-secondary"><i
+                          class="fas fa-angle-double-right"></i>Détails</a>
+                    </td>
+                    <td>
+                      <a href="#" class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Valider"><i
+                          id="choix1" class="fas fa-check-square text-success"></i></a>
+
+                      <a href="#" class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Supprimer"><i
+                          id="choix2" class="fas fa-times text-danger"></i> </a>
+
+                    </td>
                   </tr>
 
                   <tr>
                     <td>4</td>
-                    <td>Pub</td>
-                    <td>Développeur</td>
+                    <td>Article</td>
+                    <td>Madi.n</td>
+                    <td>Info</td>
                     <td>15/02/2020</td>
                     <td>
-                      <a href="details.html" class="btn-btn-secondary"><i class="fas fa-angle-double-right"></i></a>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>Article</td>
-                    <td>Cadre</td>
-                    <td>16/02/2020</td>
+                      <a href="details.html" class="btn-btn-secondary"><i
+                          class="fas fa-angle-double-right"></i>Détails</a>
                     <td>
-                      <a href="details.html" class="btn-btn-secondary"><i class="fas fa-angle-double-right"></i></a>
+                      <a href="#" class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Valider"><i
+                          id="choix1" class="fas fa-check-square text-success"></i></a>
+
+                      <a href="#" class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Supprimer"><i
+                          id="choix2" class="fas fa-times text-danger"></i> </a>
+
+                    </td>
                   </tr>
 
                   <tr>
+                    <td>5</td>
+                    <td>Matériel</td>
+                    <td>Adeline.f</td>
+                    <td>Vente</td>
+                    <td>16/02/2020</td>
+                    <td>
+                      <a href="details.html" class="btn-btn-secondary"><i
+                          class="fas fa-angle-double-right"></i>Détails</a>
+                    </td>
+                    <td>
+                      <a href="#" class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Valider"><i
+                          id="choix1" class="fas fa-check-square text-success"></i></a>
+
+                      <a href="#" class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Supprimer"><i
+                          id="choix2" class="fas fa-times text-danger"></i> </a>
+
+                    </td>
+                  </tr>
+                  <tr>
                     <td>6</td>
-                    <td>Article</td>
-                    <td>Technicien</td>
+                    <td>Baskets</td>
+                    <td>François.o</td>
+                    <td>Vente</td>
                     <td>17/02/2020</td>
                     <td>
-                      <a href="details.html" class="btn-btn-secondary"><i class="fas fa-angle-double-right"></i></a>
+                      <a href="details.html" class="btn-btn-secondary"><i
+                          class="fas fa-angle-double-right"></i>Détails</a>
+                    </td>
+                    <td>
+                      <a href="#" class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Valider"><i
+                          id="choix1" class="fas fa-check-square text-success"></i></a>
+
+                      <a href="#" class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Supprimer"><i
+                          id="choix2" class="fas fa-times text-danger"></i> </a>
+
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -293,18 +377,18 @@
               <a href="publication.html" class="btn btn-outline-light btn-sm">Voir</a>
             </div>
 
-            <div class="card text-center bg-warning text-white mb-3">
+           <!--<div class="card text-center bg-warning text-white mb-3">
               <h3>Catégories</h3>
               <h4 class="display-4">
                 <i class="fas fa-folder-open"></i>2
               </h4>
               <a href="categorie.html" class="btn btn-outline-light btn-sm">Voir</a>
-            </div>
+            </div>--> 
 
             <div class="card text-center bg-danger text-white mb-3">
               <h3>Utilisateurs</h3>
               <h4 class="display-4">
-                <i class="fas fa-users"></i>4
+                <i class="fas fa-users"></i>6
               </h4>
               <a href="utilisateur.html" class="btn btn-outline-light btn-sm">Voir</a>
             </div>
