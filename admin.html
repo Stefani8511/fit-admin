@@ -21,14 +21,14 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
-          ['Vente',     88],
-          ['Information',      10],
-          ['Cours',  2],
-          
+          ['Baskets',     48],
+          ['Vêtements',      12],
+          ['Matériel',  3],
+          ['Alimentaire',  25],
         ]);
 
         var options = {
-          title: 'Taux des catégories',
+          title: 'Taux par catégories',
           pieHole: 0.4,
         };
 
@@ -189,38 +189,17 @@
                 <input type="text" class="form-control">
               </div>
               <div class="form-group">
-                <label for="categorie">Publications</label>
+                <label for="categorie">Catégories</label>
                 <select name="form-control">
                   <option value=""></option>
                   <option value="">Baskets</option>
                   <option value="">Vêtements</option>
-                  <option value="">Haltères</option>
-                  <option value="">Tee shirt</option>
-                  <option value="">Brassières</option>
-                  <option value="">Banc</option>
-                  <option value="">Ballons</option>  
-                  <option value="">Ceinture</option>
-                  <option value="">Portable</option>
-                  <option value="">Elastique</option>
-                  <option value="">Banc</option>
-                  <option value="">Casquettes</option>
-                  <option value="">Sweat</option>
-                  <option value="">Veste</option>
-                  <option value="">Tapis</option>
-                  <option value="">Tour de tête</option>
-                  <option value="">Chaussettes</option>
-
-
+                  <option value="">Accessoires</option>
+                  <option value="">Alimentaires</option>
+                
                 </select>
               </div>
-              <div class="form-group">
-                <label for="categorie">Catégorie</label>
-                <select name="form-control">
-                  <option value="">Vente</option>
-                  <option value="">Cours</option>
-                  <option value="">Info</option>
-                </select>
-              </div>
+              
               <div class="form-group">
                 <div class="custom-file">
                   <input type="file" class="custom-file-input" id="image">
@@ -321,7 +300,6 @@
                     <th>#</th>
                     <th>Publications</th>
                     <th>Utilisateurs</th>
-                    <th>Catégorie</th>
                     <th>Date</th>
                     <th>Détails</th>
                     <th>Choix</th>
@@ -332,7 +310,6 @@
                     <td>1</td>
                     <td>Baskets</td>
                     <td>Quentin.a</td>
-                    <td>Vente</td>
                     <td>10/02/2020</td>
                     <td>
                       <a href="details.html" class="btn-btn-secondary"><i
@@ -351,7 +328,6 @@
                     <td>2</td>
                     <td>Vêtements</td>
                     <td>Julien.r</td>
-                    <td>Vente</td>
                     <td>11/02/2020</td>
                     <td>
                       <a href="details.html" class="btn-btn-secondary"><i
@@ -370,7 +346,6 @@
                     <td>3</td>
                     <td>Article</td>
                     <td>Henri.i</td>
-                    <td>Info</td>
                     <td>15/02/2020</td>
                     <td>
                       <a href="details.html" class="btn-btn-secondary"><i
@@ -390,7 +365,6 @@
                     <td>4</td>
                     <td>Article</td>
                     <td>Madi.n</td>
-                    <td>Info</td>
                     <td>15/02/2020</td>
                     <td>
                       <a href="details.html" class="btn-btn-secondary"><i
@@ -409,7 +383,6 @@
                     <td>5</td>
                     <td>Matériel</td>
                     <td>Adeline.f</td>
-                    <td>Vente</td>
                     <td>16/02/2020</td>
                     <td>
                       <a href="details.html" class="btn-btn-secondary"><i
@@ -428,7 +401,6 @@
                     <td>6</td>
                     <td>Baskets</td>
                     <td>François.o</td>
-                    <td>Vente</td>
                     <td>17/02/2020</td>
                     <td>
                       <a href="details.html" class="btn-btn-secondary"><i
