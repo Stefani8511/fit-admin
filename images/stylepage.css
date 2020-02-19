@@ -7,7 +7,7 @@
   
   }
   
-  /*HEADEr*/
+  /*HEADER*/
   
   header {
     background-image:
@@ -70,4 +70,8 @@
     border-radius: 20px;
   }
   
-  
+  /*CONTACT*/
+
+  #contact{
+    height: 100vh;
+  }
