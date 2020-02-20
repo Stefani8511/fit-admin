@@ -16,7 +16,7 @@
 
 
 
-    <link rel="stylesheet" href="images/stylepage.css">
+    <link rel="stylesheet" href="/fit-admin/images/stylepage.css">
    
     <link rel="stylesheet" href="admin.html">
 
@@ -29,14 +29,46 @@
 
 
     <header>
+<section id="navigation">
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-light alert p-4">
+                <h5 class="text-black h4">Fit & Go</h5>
+                <a href="#shop"><span class="text-muted">The shop</span></a>
+                <a href="#contact"><span class="text-muted">Contact</span></a>
+              </div>
+            </div>              
+           <nav class="navbar navbar-light alert bg-light alert">
+                
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+               <img src="images/coeur.png" width="50" height="50" class="d-inline-block align-top" alt="">Fit & Go
+            </nav>
+          </div>
 
-        <nav class="nav flex-column">
-            <h1>Fit & Go</h1>
-        
-            <a class="nav-link" href="#shop">The Shop</a>
-            <a class="nav-link" href="#contact">Contact</a>
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-        </nav>
+
+          <!--CONNEXION-->
+         
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Adresse Mail</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Mot de passe</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Continuer</button>
+          </form>
+
+
+        </section>
 
     </header>
 
