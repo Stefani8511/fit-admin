@@ -64,9 +64,11 @@
   }
    
 #shop img{
+  object-fit: cover;
   max-width: 15rem ;
   height: 15rem;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
   #shop h2{
@@ -81,6 +83,7 @@
   .card{
     box-shadow: 0 0 10px rgba(0,0,0,0.3) ;
     border-radius: 20px;
+    
   }
   fade-up{
     transition-delay: 5s;
@@ -93,3 +96,12 @@
     height: 100vh;
     margin-top: 150px;
   }
+
+
+  /*FOOTER*/
+
+   .footer{
+    color: black;
+    justify-content: end;
+     
+   }
