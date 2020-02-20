@@ -8,10 +8,7 @@
   }
   
   /*HEADER*/
-  .bg-light{
-    background-color: transparent
-  }
-
+  
 
   header {
     background-image:
@@ -100,8 +97,4 @@
 
   /*FOOTER*/
 
-   .footer{
-    color: black;
-    justify-content: end;
-     
-   }
+   
