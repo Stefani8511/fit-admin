@@ -24,6 +24,15 @@
   }
   
   
+
+  #connexion{
+    height: 40%;
+    display: flex;
+   
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
   /*
   height:100vh;
   min-height:550px;
@@ -42,12 +51,16 @@
 
   /*SHOP*/
   
+
+
   #shop{
     height: 100vh;
   
   }
   
-  
+  #shop h2{
+    margin-top: 30px;
+  }
   
   .card{
     box-shadow: 0 0 10px rgba(0,0,0,0.3) ;
