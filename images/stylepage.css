@@ -62,7 +62,13 @@
     height: 100vh;
   
   }
-  
+   
+#shop img{
+  max-width: 15rem ;
+  height: 15rem;
+  border-radius: 20px;
+}
+
   #shop h2{
     margin-top: 30px;
     margin-bottom: 60px;
@@ -83,4 +89,5 @@
 
   #contact{
     height: 100vh;
+    margin-top: 150px;
   }
